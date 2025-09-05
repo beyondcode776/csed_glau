@@ -1,0 +1,237 @@
+.neo-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 2rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .glow-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #fff, #aaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .footer-tagline {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    letter-spacing: 1px;
+  }
+  
+  .subscribe-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .neo-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 1rem;
+    color: white;
+    border-radius: 4px 0 0 4px;
+    width: 70%;
+    transition: all 0.3s ease;
+  }
+  
+  .neo-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .neo-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .neo-subscribe {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .neo-subscribe:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #fff, transparent);
+  }
+  
+  .neo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+  }
+  
+  .neo-link:hover {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  
+  .neo-link::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: white;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .neo-link:hover::before {
+    opacity: 0.5;
+    left: -5px;
+  }
+  
+  .link-icon {
+    font-size: 0.8rem;
+  }
+  
+  .project-name, .page-name {
+    font-size: 0.95rem;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .social-icon {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    opacity: 1;
+  }
+  
+  .contact-icon {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  .footer-bottom {
+    margin-top: 4rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .copyright {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    letter-spacing: 0.5px;
+  }
+  
+  .footer-decoration {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .decoration-line {
+    width: 80%;
+    max-width: 600px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  }
+  
+  .decoration-dots {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .footer-brand {
+      text-align: center;
+      align-items: center;
+    }
+    
+    .subscribe-container {
+      width: 100%;
+    }
+  }
